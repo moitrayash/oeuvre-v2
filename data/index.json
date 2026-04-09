@@ -1,0 +1,72 @@
+{
+  "Poems": {
+    "Hindi": [
+      { "name": "Pal Bhar Ke Mehmaan", "shortname": "pal-bhar-ke-mehmaan", "subtext": "July 21, 2023", "year": 2023 },
+      { "name": "Kheriyat Khoj", "shortname": "kheriyat-khoj", "subtext": "Early 2025", "year": 2025 },
+      { "name": "Be-Chaand Baatein", "shortname": "be-chaand-baatein", "subtext": "November, 2024", "year": 2024 },
+      { "name": "Hum-Safar", "shortname": "hum-safar", "subtext": "Early 2025", "year": 2025 },
+      { "name": "Raaste", "shortname": "raaste", "subtext": "Summer 2024", "year": 2024 }
+    ],
+    "two Gorgeous blood-soaked Gorges (2024 | 02)": [
+      { "name": "the whistle that never came", "shortname": "the-whistle-that-never-came", "heading": "act one: an unremarkable passing", "year": 2025 },
+      { "name": "greetings from the graveyard", "shortname": "greetings-from-the-graveyard", "heading": "act one: an unremarkable passing", "year": 2025 },
+      { "name": "my missing lavender moonlight", "shortname": "my-missing-lavender-moonlight", "heading": "the memory of a goldfish", "year": 2025 },
+      { "name": "the coldest of turkeys", "shortname": "the-coldest-of-turkeys", "heading": "the memory of a goldfish", "year": 2025 },
+      { "name": "we stole their starry nights", "shortname": "we-stole-their-starry-nights", "heading": "act two: the silence in between", "year": 2025 },
+      { "name": "popcorn on a rollercoaster", "shortname": "popcorn-on-a-rollercoaster", "heading": "act two: the silence in between", "year": 2025 },
+      { "name": "kicking the corpse", "shortname": "kicking-the-corpse", "heading": "afterword", "year": 2025 },
+      { "name": "pink", "shortname": "pink", "heading": "lookback", "year": 2025 }
+    ],
+    "Whispers of the Wind (2024 | 01)": [
+      { "name": "cardiac arrest", "shortname": "cardiac-arrest", "subtext": "September 3rd, 2024", "year": 2024 },
+      { "name": "waldo's empty cup of coffee", "shortname": "waldos-empty-cup-of-coffee", "subtext": "September 1st, 2024", "year": 2024 },
+      { "name": "sailor's muse", "shortname": "sailors-muse", "subtext": "August 18th, 2024", "year": 2024 },
+      { "name": "swallowed the bubblegum", "shortname": "swallowed-the-bubblegum", "subtext": "2024", "year": 2024 }
+    ],
+    "a Spring to Fall for (2025 | 01)": [
+      { "name": "Heavy Hand", "shortname": "heavy-hand", "subtext": "June 15th, 2025", "year": 2025 },
+      { "name": "Yellow Pages", "shortname": "yellow-pages", "subtext": "June 15th, 2025", "year": 2025 },
+      { "name": "Black Dog & Blue Whale", "shortname": "black-dog-blue-whale", "subtext": "February 22nd, 2025", "year": 2025 },
+      { "name": "Pink Scare", "shortname": "pink-scare", "subtext": "January 29th, 2025", "year": 2025 },
+      { "name": "Pink Lies", "shortname": "pink-lies", "subtext": "January 25th, 2025", "year": 2025 }
+    ],
+    "a flight into the sun (2023 | 02)": [
+      { "name": "ignorance", "shortname": "ignorance", "subtext": "2023", "year": 2023 },
+      { "name": "begone", "shortname": "begone", "subtext": "2023", "year": 2023 },
+      { "name": "sink", "shortname": "sink", "subtext": "2023", "year": 2023 }
+    ],
+    "tripping on thin air (2023 | 01)": [
+      { "name": "drawing lashes onto a ghost", "shortname": "drawing-lashes-onto-a-ghost", "subtext": "February 28, 2023", "year": 2023 },
+      { "name": "deviltown's abandoned apartment", "shortname": "deviltowns-abandoned-apartment", "subtext": "March 2, 2023", "year": 2023 },
+      { "name": "this is fine", "shortname": "this-is-fine", "subtext": "June 1, 2023", "year": 2023 },
+      { "name": "slip", "shortname": "slip", "subtext": "June 1, 2023", "year": 2023 },
+      { "name": "withdrawal symptoms", "shortname": "withdrawal-symptoms", "subtext": "2023", "year": 2023 },
+      { "name": "motionless emotion", "shortname": "motionless-emotion", "subtext": "2023", "year": 2023 },
+      { "name": "solemn cigarette", "shortname": "solemn-cigarette", "subtext": "July 19, 2023", "year": 2023 }
+    ],
+    "Fairy (2022)": [
+      { "name": "Fairy", "shortname": "fairy-2022", "subtext": "Read the full abridged collection on Archive.org", "year": 2022, "externalUrl": "https://archive.org/details/fairy-one" }
+    ]
+  },
+  "Prose": {
+    "Lia": [
+      { "name": "Lia (1/n)", "shortname": "lia-1", "year": 2025 }
+    ],
+    "Maia (2/n)": [
+      { "name": "Maia (2/n)", "shortname": "maia-2", "year": 2025 }
+    ]
+  },
+  "Acousmatics": {
+    "the Sound of Cornell": [
+      { "name": "Pilot", "shortname": "sound-of-cornell", "subtext": "YouTube Video", "year": 2023, "externalUrl": "https://www.youtube.com/watch?v=6k3pwpDL_WY&t=34s" }
+    ]
+  },
+  "Speeches": {
+    "Audio/Video": [
+      { "name": "Farewell to Scottish High International School", "shortname": "farewell-shis", "subtext": "Delivered in 2023", "year": 2023, "externalUrl": "https://www.youtube.com/watch?v=OyDLwAbbiPo&t=65s" }
+    ],
+    "Transcripts": [
+      { "name": "Farewell to Scottish High International School", "shortname": "farewell-shis-transcript", "subtext": "Delivered in 2023", "year": 2023 }
+    ]
+  }
+}
