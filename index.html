@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oeuvre</title>
+  <meta name="description" content="Oeuvre — the collected works of Yash Moitra." />
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Preconnect to self for fetch calls -->
+</head>
+<body>
+  <div id="app">
+    <!-- Item / work detail view (hidden by default) -->
+    <div id="itemPage" class="item-page" aria-live="polite"></div>
+
+    <!-- Main listing view -->
+    <div id="mainView" class="main-view">
+      <header>
+        <h1>Oeuvre</h1>
+        <p class="definition">
+          [ <span class="definition-pronunciation">/ˈɜːvrə/</span> ] <i>noun</i>: a repertoire of art; the works of a painter, composer, or author regarded collectively.
+        </p>
+        <p class="author-name">Yash Moitra, Cornell University &rsquo;27</p>
+        <div class="header-line"></div>
+      </header>
+      <nav id="mainNav" aria-label="Category navigation"></nav>
+      <main id="mainContent" aria-busy="true">Loading&hellip;</main>
+      <footer>
+        <p>Yash Moitra (2025)</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
