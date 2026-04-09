@@ -1,5 +1,9 @@
 {
   "Poems": {
+    "2026 | 01": [
+      { "name": "Time Traveller", "shortname": "time-traveller", "year": 2026 },
+      { "name": "Sustenance", "shortname": "sustenance", "year": 2026 }
+    ],
     "Hindi": [
       { "name": "Pal Bhar Ke Mehmaan", "shortname": "pal-bhar-ke-mehmaan", "subtext": "July 21, 2023", "year": 2023 },
       { "name": "Kheriyat Khoj", "shortname": "kheriyat-khoj", "subtext": "Early 2025", "year": 2025 },
