@@ -149,6 +149,11 @@
       footnotesHTML += '</div>';
     }
 
+        let publicationHTML = '';
+  if (data.publication && data.publication.text && data.publication.url) {
+    publicationHTML = '<div class="publication">As seen in <a href="' + esc(data.publication.url) + '" target="_blank">' + esc(data.publication.text) + '</a></div>';
+  }
+
     const prevLink = prev
       ? '<a href="#/work/' + esc(prev.shortname) + '" class="item-page-nav-link">&larr; ' + esc(prev.name) + '</a>'
       : '<span class="nav-placeholder"></span>';
@@ -174,6 +179,7 @@
         prevLink +
         '<a href="#' + catId + '" class="back-link">&larr; Back</a>' +
         nextLink +
+            publicationHTML +
       '</nav>';
 
     itemPage.classList.add('active');
