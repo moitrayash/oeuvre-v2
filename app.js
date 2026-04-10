@@ -175,11 +175,11 @@
         '<p class="item-meta">Collection: ' + esc(subsection) + '</p>' +
       '</div>' +
       footnotesHTML +
+            publicationHTML +
       '<nav class="item-page-nav" aria-label="Work navigation">' +
         prevLink +
         '<a href="#' + catId + '" class="back-link">&larr; Back</a>' +
         nextLink +
-            publicationHTML +
       '</nav>';
 
     itemPage.classList.add('active');
