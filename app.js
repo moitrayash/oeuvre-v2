@@ -155,16 +155,16 @@
   }
 
     const prevLink = prev
-      ? '<a href="#/work/' + esc(prev.shortname) + '" class="item-page-nav-link">&larr; ' + esc(prev.name) + '</a>'
+      ? '<a href="#/work/' + esc(prev.shortname) + '" class="item-page-nav-link">' + esc(prev.name) + '</a>'
       : '<span class="nav-placeholder"></span>';
     const nextLink = next
-      ? '<a href="#/work/' + esc(next.shortname) + '" class="item-page-nav-link">' + esc(next.name) + ' &rarr;</a>'
+      ? '<a href="#/work/' + esc(next.shortname) + '" class="item-page-nav-link">' + esc(next.name) + '</a>'
       : '<span class="nav-placeholder"></span>';
 
     document.title = data.name + ' (Oeuvre)';
 
     itemPage.innerHTML =
-      '<a href="#' + catId + '" class="back-link">&larr; Back to ' + esc(category) + '</a>' +
+      '<a href="#' + catId + '" class="back-link">Back to ' + esc(category) + '</a>' +
       '<h2 class="item-title">' + esc(data.name) + '</h2>' +
       dateHTML +
       '<div class="item-content">' + contentHTML + '</div>' +
@@ -178,7 +178,7 @@
             publicationHTML +
       '<nav class="item-page-nav" aria-label="Work navigation">' +
         prevLink +
-        '<a href="#' + catId + '" class="back-link">&larr; Back</a>' +
+        '<a href="#' + catId + '" class="back-link">Back</a>' +
         nextLink +
       '</nav>';
 
@@ -190,7 +190,7 @@
   function showNotFound(slug) {
     document.title = 'Not found (Oeuvre)';
     itemPage.innerHTML =
-      '<a href="#" class="back-link">&larr; Back to Oeuvre</a>' +
+      '<a href="#" class="back-link">Back to Oeuvre</a>' +
       '<h2 class="item-title">Work not found</h2>' +
       '<p>No work with id &ldquo;' + esc(slug) + '&rdquo; exists in this collection yet.</p>';
     itemPage.classList.add('active');
