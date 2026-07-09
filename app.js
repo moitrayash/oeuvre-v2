@@ -178,7 +178,7 @@
             publicationHTML +
       '<nav class="item-page-nav" aria-label="Work navigation">' +
         prevLink +
-        '<a href="#' + catId + '" class="back-link">Back</a>' +
+        '<a href="#' + catId + '" class="back-link" style="margin-bottom:0">Back to ' + esc(category) + '</a>' +
         nextLink +
       '</nav>';
 
@@ -219,7 +219,7 @@
       try {
         const data = await fetchWork(slug);
         // Merge meta fields not in JSON (category, subsection, index)
-        renderWork(meta, Object.assign({}, meta, data));
+        renderWork(meta, Object.assign({}, data, meta));
       } catch(e) {
         showNotFound(slug);
       }
