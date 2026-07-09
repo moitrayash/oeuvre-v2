@@ -155,10 +155,10 @@
   }
 
     const prevLink = prev
-      ? '<a href="#/work/' + esc(prev.shortname) + '" class="item-page-nav-link">' + esc(prev.name) + '</a>'
+      ? '<a href="#/work/' + esc(prev.shortname) + '" class="item-page-nav-link">&lt; ' + esc(prev.name) + '</a>'
       : '<span class="nav-placeholder"></span>';
     const nextLink = next
-      ? '<a href="#/work/' + esc(next.shortname) + '" class="item-page-nav-link">' + esc(next.name) + '</a>'
+      ? '<a href="#/work/' + esc(next.shortname) + '" class="item-page-nav-link">' + esc(next.name) + ' &gt;</a>'
       : '<span class="nav-placeholder"></span>';
 
     document.title = data.name + ' (Oeuvre)';
