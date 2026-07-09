@@ -161,7 +161,7 @@
       ? '<a href="#/work/' + esc(next.shortname) + '" class="item-page-nav-link">' + esc(next.name) + ' &rarr;</a>'
       : '<span class="nav-placeholder"></span>';
 
-    document.title = data.name + ' — Oeuvre';
+    document.title = data.name + ' (Oeuvre)';
 
     itemPage.innerHTML =
       '<a href="#' + catId + '" class="back-link">&larr; Back to ' + esc(category) + '</a>' +
@@ -188,7 +188,7 @@
   }
 
   function showNotFound(slug) {
-    document.title = 'Not found — Oeuvre';
+    document.title = 'Not found (Oeuvre)';
     itemPage.innerHTML =
       '<a href="#" class="back-link">&larr; Back to Oeuvre</a>' +
       '<h2 class="item-title">Work not found</h2>' +
