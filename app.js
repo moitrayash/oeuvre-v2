@@ -76,6 +76,33 @@
     }
   }
 
+  /* ---- Collection labels: "Name (YYYY | NN)" ---- */
+  const COLLECTION_RE = /^(.*?)\s*\((\d{4})\s*\|\s*(\d+)\)\s*$/;
+
+  function parseCollection(label) {
+    const m = COLLECTION_RE.exec(label);
+    if (!m) return { name: label, year: null, serial: null };
+    return { name: m[1].trim(), year: parseInt(m[2], 10), serial: parseInt(m[3], 10) };
+  }
+
+  function collectionDate(label, subsections) {
+    const parsed = parseCollection(label);
+    if (!parsed.year) return '';
+    let total = 0;
+    Object.keys(subsections).forEach(function(other) {
+      if (parseCollection(other).year === parsed.year) total++;
+    });
+    const ongoing = parsed.year >= new Date().getFullYear();
+    return parsed.year + ' ' + parsed.serial + '/' + (ongoing ? 'n' : total);
+  }
+
+  function renderSubsectionTitle(label, subsections) {
+    const name = parseCollection(label).name;
+    const date = collectionDate(label, subsections);
+    return '<h3 class="subsection-title"><span class="subsection-name">' + esc(name) + '</span>' +
+      (date ? '<span class="subsection-date">' + esc(date) + '</span>' : '') + '</h3>';
+  }
+
   /* ---- Render: main navigation ---- */
   function renderNav(cat) {
     const keys = Object.keys(cat);
@@ -95,7 +122,7 @@
       html += '<h2 class="category-heading">' + esc(category) + '</h2>';
       for (const [subsection, works] of Object.entries(subsections)) {
         html += '<div class="subsection">';
-        html += '<h3 class="subsection-title">' + esc(subsection) + '</h3>';
+        html += renderSubsectionTitle(subsection, subsections);
         html += '<ul class="work-list">';
         works.forEach(function(work) {
           html += '<li class="work-item">';
@@ -172,7 +199,7 @@
         headingHTML +
         '<p class="item-meta">Year: ' + esc(data.year) + '</p>' +
         '<p class="item-meta">Category: ' + esc(category) + '</p>' +
-        '<p class="item-meta">Collection: ' + esc(subsection) + '</p>' +
+        '<p class="item-meta">Collection: ' + esc(parseCollection(subsection).name) + '</p>' +
       '</div>' +
       footnotesHTML +
             publicationHTML +
