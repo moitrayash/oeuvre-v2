@@ -69,19 +69,30 @@ section { margin-bottom: 100px; padding-top: 40px; }
 
 .subsection { margin-bottom: 50px; }
 .subsection-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 20px;
   font-style: italic;
 }
+.subsection-date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+}
 
 /* ===== Work list ===== */
 .work-list { list-style: none; padding: 0; }
-.work-item { margin-bottom: 12px; }
+.work-item { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin-bottom: 12px; }
 .work-item a { color: #000; text-decoration: none; transition: opacity .15s ease; }
 .work-item a:hover { text-decoration: underline; }
-.work-year { color: #666; font-size: 14px; margin-left: 8px; }
+.work-year { color: #666; font-size: 14px; margin-left: 8px; white-space: nowrap; }
 
 /* ===== Item / detail page ===== */
 .item-page { display: none; }
