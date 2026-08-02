@@ -15,7 +15,7 @@ body {
 .main-view > header { padding: 60px 20px 40px; text-align: center; max-width: 800px; margin: 0 auto; }
 .main-view > nav    { padding: 40px 20px 60px; text-align: center; max-width: 800px; margin: 0 auto; }
 .main-view > main   { padding: 20px 20px 0;  max-width: 800px; margin: 0 auto; }
-.main-view > footer { padding: 60px 20px 40px; max-width: 800px; margin: 0 auto; }
+.main-view > footer { padding: 50px 20px; max-width: 800px; margin: 0 auto; }
 
 /* ===== Header ===== */
 h1 {
@@ -165,7 +165,7 @@ section { margin-bottom: 100px; padding-top: 40px; }
 /* footer */
 footer {
   text-align: center;
-  padding: 60px 0 40px;
+  padding: 50px 0;
   font-size: 14px;
   color: #666;
   border-top: 1px solid #000;
