@@ -1,0 +1,24 @@
+name: Graft Oeuvre v1 into archive/
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  graft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Subtree-add moitrayash/oeuvre under archive/
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote add v1 https://github.com/moitrayash/oeuvre.git
+          git fetch v1
+          git subtree add --prefix=archive v1 main -m "Nest Oeuvre v1 under archive/ (full history of the archived moitrayash/oeuvre repo)"
+          git remote remove v1
+          git push origin HEAD:main
