@@ -85,20 +85,18 @@
     return { name: m[1].trim(), year: parseInt(m[2], 10), serial: parseInt(m[3], 10) };
   }
 
-  function collectionDate(label, subsections) {
+  function collectionDate(label) {
     const parsed = parseCollection(label);
     if (!parsed.year) return '';
-    let total = 0;
-    Object.keys(subsections).forEach(function(other) {
-      if (parseCollection(other).year === parsed.year) total++;
-    });
-    const ongoing = parsed.year >= new Date().getFullYear();
-    return parsed.year + ' ' + parsed.serial + '/' + (ongoing ? 'n' : total);
+    return String(parsed.year);
   }
 
-  function renderSubsectionTitle(label, subsections) {
+  /* Collections that carry no section year and so show a year per work. */
+  const YEAR_PER_WORK = ['Hindi'];
+
+  function renderSubsectionTitle(label) {
     const name = parseCollection(label).name;
-    const date = collectionDate(label, subsections);
+    const date = collectionDate(label);
     return '<h3 class="subsection-title"><span class="subsection-name">' + esc(name) + '</span>' +
       (date ? '<span class="subsection-date">' + esc(date) + '</span>' : '') + '</h3>';
   }
@@ -122,8 +120,9 @@
       html += '<h2 class="category-heading">' + esc(category) + '</h2>';
       for (const [subsection, works] of Object.entries(subsections)) {
         html += '<div class="subsection">';
-        html += renderSubsectionTitle(subsection, subsections);
+        html += renderSubsectionTitle(subsection);
         html += '<ul class="work-list">';
+        const showYears = YEAR_PER_WORK.indexOf(subsection) !== -1;
         works.forEach(function(work) {
           html += '<li class="work-item">';
           if (work.externalUrl) {
@@ -133,7 +132,7 @@
           } else {
             html += '<span>' + esc(work.name) + '</span>';
           }
-          if (work.year) html += '<span class="work-year">' + esc(work.year) + '</span>';
+          if (showYears && work.year) html += '<span class="work-year">' + esc(work.year) + '</span>';
           html += '</li>';
         });
         html += '</ul></div>';
