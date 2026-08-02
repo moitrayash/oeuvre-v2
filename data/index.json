@@ -48,15 +48,13 @@
       { "name": "motionless emotion", "shortname": "motionless-emotion", "subtext": "2023", "year": 2023 },
       { "name": "solemn cigarette", "shortname": "solemn-cigarette", "subtext": "July 19, 2023", "year": 2023 }
     ],
-    "Fairy (2022)": [
+    "Fairy (2022 | 01)": [
       { "name": "Fairy", "shortname": "fairy-2022", "subtext": "Read the full abridged collection on Archive.org", "year": 2022, "externalUrl": "https://archive.org/details/fairy-one" }
     ]
   },
   "Prose": {
-    "Lia": [
-      { "name": "Lia (1/n)", "shortname": "lia-1", "year": 2025 }
-    ],
-    "Maia (2/n)": [
+    "Lia (2025 | 01)": [
+      { "name": "Lia (1/n)", "shortname": "lia-1", "year": 2025 },
       { "name": "Maia (2/n)", "shortname": "maia-2", "year": 2025 }
     ]
   },
