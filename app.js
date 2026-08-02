@@ -92,7 +92,7 @@
   }
 
   /* Collections that carry no section year and so show a year per work. */
-  const YEAR_PER_WORK = ['Hindi'];
+  const YEAR_PER_WORK = ['Hindi', 'the Sound of Cornell', 'Audio/Video', 'Transcripts'];
 
   function renderSubsectionTitle(label) {
     const name = parseCollection(label).name;
