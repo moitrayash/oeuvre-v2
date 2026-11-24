@@ -154,7 +154,8 @@
     if (Array.isArray(data.content)) {
       if (category === 'Poems') {
         contentHTML = data.content.map(function(line) {
-          return line === '' ? '<br>' : '<p class="poem-line">' + esc(line) + '</p>';
+          // A line wrapped whole in *asterisks* renders in italics.
+          return line === '' ? '<br>' : '<p class="poem-line">' + esc(line).replace(/^\*(.+)\*$/, '<em>$1</em>') + '</p>';
         }).join('');
       } else {
         contentHTML = data.content.map(function(para) {
