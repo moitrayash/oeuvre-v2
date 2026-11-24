@@ -2,7 +2,8 @@
   "Poems": {
     "Is the first half over yet? (2026 | 01)": [
       { "name": "Time Traveller", "shortname": "time-traveller", "year": 2026 },
-      { "name": "Sustenance", "shortname": "sustenance", "year": 2026 }
+      { "name": "Sustenance", "shortname": "sustenance", "year": 2026 },
+      { "name": "Do you see God?", "shortname": "do-you-see-god", "subtext": "October 12, 2026", "year": 2026 }
     ],
     "Hindi": [
       { "name": "Pal Bhar Ke Mehmaan", "shortname": "pal-bhar-ke-mehmaan", "subtext": "July 21, 2023", "year": 2023 },
