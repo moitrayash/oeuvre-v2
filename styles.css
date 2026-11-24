@@ -67,6 +67,14 @@ section { margin-bottom: 100px; padding-top: 40px; }
   letter-spacing: 1px;
 }
 
+.category-jump {
+  font-size: 14px;
+  text-align: center;
+  margin: -44px 0 60px;
+}
+.category-jump a { color: #666; text-decoration: none; }
+.category-jump a:hover { text-decoration: underline; }
+
 .subsection { margin-bottom: 50px; }
 .subsection-title {
   display: flex;

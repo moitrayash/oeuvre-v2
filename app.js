@@ -118,8 +118,11 @@
       const catId = slugify(category);
       html += '<section id="' + catId + '">';
       html += '<h2 class="category-heading">' + esc(category) + '</h2>';
+      if (category === 'Poems' && subsections['Hindi']) {
+        html += '<p class="category-jump"><a href="#' + catId + '-hindi">Jump to Hindi</a></p>';
+      }
       for (const [subsection, works] of Object.entries(subsections)) {
-        html += '<div class="subsection">';
+        html += '<div class="subsection" id="' + catId + '-' + slugify(parseCollection(subsection).name) + '">';
         html += renderSubsectionTitle(subsection);
         html += '<ul class="work-list">';
         const showYears = YEAR_PER_WORK.indexOf(subsection) !== -1;
